@@ -1,0 +1,17 @@
+# Crear .gitignore con exclusiones estándar
+cat << 'EOF' > .gitignore
+# Archivos de sistema y entorno
+.DS_Store
+Thumbs.db
+*.tmp
+
+# Entornos virtuales y caché de Python
+__pycache__/
+*.pyc
+.venv/
+env/
+
+# Archivos temporales de Microsoft Office
+~$*.docx
+~$*.xlsx
+EOF
