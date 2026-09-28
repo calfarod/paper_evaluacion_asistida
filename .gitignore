@@ -1,5 +1,4 @@
-# Crear .gitignore con exclusiones estándar
-cat << 'EOF' > .gitignore
+@'
 # Archivos de sistema y entorno
 .DS_Store
 Thumbs.db
@@ -14,4 +13,4 @@ env/
 # Archivos temporales de Microsoft Office
 ~$*.docx
 ~$*.xlsx
-EOF
+'@ | Out-File -FilePath .gitignore -Encoding utf8
