@@ -27,6 +27,8 @@ import pandas as pd
 import numpy as np
 import pingouin as pg
 import scipy.stats as stats
+import matplotlib.pyplot as plt
+import seaborn as sns
 
 
 # URL modificada para exportación directa a CSV
@@ -263,3 +265,63 @@ ttest_B = probar_compromiso_docente_scipy(df_B['BD2_promedio'], "CONSTRUCTO B (N
 
 # Insertar espacios
 print("\n\n")
+
+# GRAFICA DE BARRAS
+
+# Ejemplo con seaborn para promedios por ítem
+plt.figure(figsize=(10, 6))
+sns.barplot(data=df_A[items_AD4], orient='h', palette='Blues_r', errorbar=None)
+plt.axvline(3, color='red', linestyle='--', label='Punto Neutro (3.0)')
+plt.title('Percepción de Compromiso Docente (Constructo A - N=9)')
+plt.xlim(1, 5)
+plt.xlabel('Escala Likert (1 a 5)')
+plt.legend()
+plt.tight_layout()
+plt.show()
+
+
+# GRAFICA CAJA Y BIGOTES
+
+# Unir datos para gráfico comparativo
+df_A_comp = pd.DataFrame({'Grupo': 'Sí rindieron (N=9)', 'Compromiso': df_A['AD4_promedio']})
+df_B_comp = pd.DataFrame({'Grupo': 'No rindieron (N=4)', 'Compromiso': df_B['BD2_promedio']})
+df_total = pd.concat([df_A_comp, df_B_comp])
+
+plt.figure(figsize=(8, 5))
+sns.boxplot(x='Grupo', y='Compromiso', data=df_total, palette='Set2', width=0.4)
+sns.stripplot(x='Grupo', y='Compromiso', data=df_total, color='black', jitter=0.2, size=8)
+
+# Línea de referencia del punto neutro de la prueba de hipótesis
+plt.axhline(3.0, color='red', linestyle='--', label='Punto Neutro (H0: μ = 3.0)')
+plt.ylim(1, 5.5)
+plt.title('Comparación de la Percepción del Compromiso Docente')
+plt.ylabel('Puntaje Promedio (Escala 1-5)')
+plt.legend()
+plt.tight_layout()
+plt.show()
+
+# GRAFICA RADAR
+
+# Proporción de las 5 dimensiones de A
+labels = ['Feedback', 'Justicia', 'Eficiencia', 'Compromiso', 'Aceptación']
+valores = [
+    df_A[dims_A['AD1_retralim_util']].mean().mean(),
+    df_A[dims_A['AD2_evaluac_justa']].mean().mean(),
+    df_A[dims_A['AD3_revisa_oportuna']].mean().mean(),
+    df_A['AD4_promedio'].mean(),
+    df_A[dims_A['AD5_aceptacion']].mean().mean()
+]
+
+# Configuración de los ángulos del radar
+angles = np.linspace(0, 2 * np.pi, len(labels), endpoint=False).tolist()
+valores += valores[:1]
+angles += angles[:1]
+
+fig, ax = plt.subplots(figsize=(6, 6), subplot_kw=dict(polar=True))
+ax.fill(angles, valores, color='teal', alpha=0.25)
+ax.plot(angles, valores, color='teal', linewidth=2)
+ax.set_xticks(angles[:-1])
+ax.set_xticklabels(labels)
+ax.set_ylim(1, 5)
+plt.title('Perfil Multidimensional de Percepción (Grupo Sí Rindió)', y=1.1)
+plt.show()
