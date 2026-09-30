@@ -1,8 +1,8 @@
 # Rediseño de la Evaluación Universitaria mediante Inteligencia Artificial Generativa: Optimización del Feedback Formativo y Eficiencia Docente en la Enseñanza de Investigación de Mercados
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXX)
-[![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC_BY--NC_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/deed.es)
-[![License: MIT](https://img.shields.io/badge/Code_License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23027579.svg)](https://doi.org/10.5281/zenodo.23027579)
+[![License: GPL v3](https://img.shields.io/badge/Code_License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+[![License: CC BY-NC 4.0](https://img.shields.io/badge/Data_License-CC_BY--NC_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/deed.es)
 [![Status: Research](https://img.shields.io/badge/Status-Active_Research-blue.svg)](#)
 
 ---
@@ -89,23 +89,47 @@ Contacto: calfarod@gmail.com
 # 📖 Cita / Citation
 Si utilizas esta metodología, el cuestionario PEA-IA o los datos de este repositorio en tus investigaciones o innovaciones docentes, por favor cita este trabajo como:
 
-Fragmento de código
-@misc{alfaro2026rediseno,
-  author       = {Alfaro D'iaz, Carlos Alfonso},
-  title        = {Redise\~no de la Evaluaci\'on Universitaria mediante Inteligencia Artificial Generativa: Optimizaci\'on del Feedback Formativo y Eficiencia Docente en la Ense\~nanza de Investigaci\'on de Mercados},
-  year         = {2026},
+@software{tu_clave_cite_2026,
+  author       = {Alfaro Díaz, Carlos},
+  title        = {Rediseño de la Evaluación Universitaria mediante Inteligencia Artificial Generativa: Optimización del Feedback Formativo y Eficiencia Docente en la Enseñanza de Investigación de Mercados},
+  month        = sep,
+  year         = 2026,
   publisher    = {Zenodo},
-  doi          = {10.5281/zenodo.XXXXXXX},
-  url          = {[https://doi.org/10.5281/zenodo.XXXXXXX](https://doi.org/10.5281/zenodo.XXXXXXX)}
+  version      = {v1.0.1},
+  doi          = {10.5281/zenodo.23027579},
+  url          = {https://doi.org/10.5281/zenodo.23027579}
 }
 
-# 📄 Licencia
-Este repositorio se distribuye bajo un esquema dual de licenciamiento:
+# 📄 Licencias y Derechos de Autor
 
-Contenido Académico, Documentos, Cuestionarios y Datos: Licenciado bajo Creative Commons Atribución-NoComercial 4.0 Internacional (CC BY-NC 4.0).
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23027579.svg)](https://doi.org/10.5281/zenodo.23027579)
+[![License: GPL v3](https://img.shields.io/badge/Code_License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+[![License: CC BY-NC 4.0](https://img.shields.io/badge/Data_License-CC_BY--NC_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/deed.es)
+[![Status: Research](https://img.shields.io/badge/Status-Active_Research-blue.svg)](#)
 
-Permitido: Copiar, redistribuir, mezclar, transformar y crear a partir del material en cualquier medio o formato.
+Este repositorio utiliza un esquema dual de licenciamiento diferenciado para el código y el contenido académico:
 
-Condiciones: Debe dar el crédito correspondiente (autoría), proporcionar un enlace a la licencia e indicar si se realizaron cambios. No puede hacer uso del material con fines comerciales.
+---
 
-scripts, código fuente todos los derechos reservados Carlos Alfonso Alfaro Díaz
+### 💻 Código Fuente y Scripts
+**Licencia:** [GNU General Public License v3.0 (GPLv3)](https://www.gnu.org/licenses/gpl-3.0)  
+**Titular de Derechos:** © Carlos Alfonso Alfaro Díaz
+
+* **Permitido:** Uso, copia, modificación, estudio y redistribución del código.
+* **Condiciones:** Cualquier trabajo derivado o modificación de los scripts debe mantenerse de código abierto y publicarse bajo la misma licencia **GNU GPLv3** (*Copyleft*), reconociendo expresamente la autoría original.
+
+---
+
+### 📚 Contenido Académico, Documentación, Cuestionarios y Datos
+**Licencia:** [Creative Commons Atribución-NoComercial 4.0 Internacional (CC BY-NC 4.0)](https://creativecommons.org/licenses/by-nc/4.0/deed.es)  
+**Titular de Derechos:** © Carlos Alfonso Alfaro Díaz
+
+* **Permitido:** Copiar, redistribuir, adaptar, combinar y transformar el material en cualquier formato o medio con fines de investigación o docencia.
+* **Condiciones:**
+  1. **Atribución:** Debe dar el crédito académico correspondiente, proporcionar un enlace a la licencia e indicar si se realizaron cambios.
+  2. **No Comercial:** No puede utilizar este material para fines comerciales ni lucrativos directos o indirectos.
+
+---
+
+### 📌 Cita del Trabajo
+Para citar este trabajo académico o el software asociado, utilice la información contenida en el archivo [`CITATION.cff`](./CITATION.cff) o consulte la referencia en Zenodo (DOI: [10.5281/zenodo.23027579](https://doi.org/10.5281/zenodo.23027579)).

@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+title: "Rediseño de la Evaluación Universitaria mediante Inteligencia Artificial Generativa: Optimización del Feedback Formativo y Eficiencia Docente en la Enseñanza de Investigación de Mercados"
+message: "Si utilizas este proyecto o investigación en tu trabajo, por favor cítalo como se indica a continuación."
+type: software
+authors:
+  - family-names: "Alfaro Díaz"
+    given-names: "Carlos"
+doi: 10.5281/zenodo.23027579
+date-released: 2026-09-30
+version: "1.0.0"
+repository-code: "https://github.com/calfarod/paper_evaluacion_asistida"
+license: GPL-3.0-only
+keywords:
+  - "inteligencia-artificial-generativa"
+  - "evaluacion-universitaria"
+  - "feedback-formativo"
+  - "investigacion-de-mercados"
+  - "gemini"
